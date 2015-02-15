@@ -8,25 +8,27 @@
 
 <div class="row">
 
-  <div class="small-8 large-9 columns">
+  <div class="small-8 large-12 columns">
 		<select name="os0" style="max-width:370px">
 			<option value="Small">Small</option>
 			<option value="Medium">Medium</option>
 			<option value="Large">Large</option>			
 		</select>
+		<input type="hidden" name="currency_code" value="USD">
+			<button type="submit" value="Add to Cart" name="submit" style="background-color:transparent;color:#ffffff;"><i class="fi-shopping-cart" ></i>
+			</button>
   </div>
 
 
 
-
 </div>
-
+<hr>
 <div class="row">
 	<div class="small-block-grid-1 large-6 columns">
 	
-		<ul class="example-orbit" style="color:#ffffff;min-height:500px" data-orbit >
+		<ul class="example-orbit" style="color:#ffffff;min-height:500px;" data-orbit >
 		  <li>
-		    <img src="//localhost/enwebstore/public/images/products/{{$producer->name}}.jpg" alt="slide 1" />
+		    <img src="//localhost/enwebstore/public/images/products/{{$producer->name}}.jpg" style="height:500px" alt="slide 1" />
 	
 		  </li>
 			<li class="active">

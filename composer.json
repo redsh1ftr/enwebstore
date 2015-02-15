@@ -11,8 +11,7 @@
 	},
 
 	"require-dev": {
-    "way/generators": "2.*",
-    "laracasts/utilities": "~2.0"
+    "way/generators": "2.*"
 },
 	"autoload": {
 		"classmap": [

@@ -6,7 +6,7 @@
   <title>Stay Awake to Create</title>
    <link rel="stylesheet" href="//54.149.206.42/etnoc_a/public/foundation/css/foundation.css">
    <link rel="stylesheet" href="//54.149.206.42/etnoc_a/public/foundation/css/normalize.css">
-   <link rel="stylesheet" href="//localhost/etnoc_a/public/foundation/foundation-icons/foundation-icons.css" />
+   <link rel="stylesheet" href="//localhost/enwebstore/public/foundation/foundation-icons/foundation-icons.css" />
    <link rel="stylesheet" type="text/css" href="//localhost/etnoc_a/public/date/jquery.datetimepicker.css"/ >
       <script src="//localhost/etnoc_a/public/date/jquery.js"></script>
       <script src="//localhost/etnoc_a/public/date/jquery.datetimepicker.js"></script>
@@ -158,11 +158,6 @@
 
 </script>
 
-<script type="text/javascript">
-         function swap(image) {
-             document.getElementById("main").src = image.href;
-         }
-     </script>
 
 <div class="mainbody" min-height="100%">
 
