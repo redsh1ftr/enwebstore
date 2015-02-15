@@ -105,13 +105,14 @@
           {{--LEFT MENU OPTIONS HERE--}}
 
 
+<li>{{link_to_route('product.index', 'Everything')}}</li>
 
 
+@foreach(ProductCat::get() as $category)
+  
+<li> <a style="color:#ffffff"{{link_to_route('sortProducts', Str::title($category->name), $category->name)}}</li>
 
-
-
-
-
+@endforeach
 
 
 

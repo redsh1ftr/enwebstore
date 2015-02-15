@@ -6,6 +6,7 @@ class Producer extends \Eloquent {
 	public static $rules = [
 	'name' => 'required|unique:producers|min:3',
 	'category' => 'required|min:2',
+	'price' => 'required'
 		// 'title' => 'required'
 	];
 
@@ -13,18 +14,19 @@ class Producer extends \Eloquent {
 	protected $fillable = [
 	'name',
 	'description',
-	'category_id',
+	'category',
+	'price',
 	'active',
 	'onsale',
 	'upcomming',
 	'preorder',
-	'x-small',
+	'xsmall',
 	'small',
 	'medium',
 	'large',
-	'x-large',
-	'xx-large',
-	'xxx-large',
+	'xlarge',
+	'xxlarge',
+	'xxxlarge',
 	'onesize',
 	];
 

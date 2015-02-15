@@ -43,6 +43,10 @@
 		</div>
 
 		<div class="small-12 columns">
+			{{Form::text('price', '', array('placeholder' => 'Price'))}}
+		</div>
+
+		<div class="small-12 columns">
 
 			<select name="category" style="color:#000000;max-width:300px">
 				<option value="">Select a category....</option>
@@ -60,15 +64,15 @@
 
 		<div class="small-12 columns">
 			
-			{{Form::checkbox('active', 1, '')}}<label>Active</label>
+			{{Form::checkbox('active', 1)}}<label>Active</label>
 		</div>
 		<div class="small-12 columns">
 			
-			{{Form::checkbox('upcomming', 1, '')}}<label>Upcomming</label>
+			{{Form::checkbox('upcomming', 1)}}<label>Upcomming</label>
 		</div>
 		<div class="small-12 columns">
 			
-			{{Form::checkbox('onsale', 1, '')}}<label>On Sale</label>
+			{{Form::checkbox('onsale', 1)}}<label>On Sale</label>
 		</div>
 
 	<hr>
@@ -77,13 +81,14 @@ Sizes
 
 		
 				@foreach(Size::select('size')->distinct()->get() as $size)
-				<div class="small-12 columns" >					
-						{{Form::checkbox($size, 1, '')}}
+				<div class="small-12 columns" >	
+				<input type="checkbox" name="{{$size->size}}" value="1">				
+						
 						<label>{{Str::title($size->size)}}</label>
 				</div>
 				@endforeach
 				<div class="small-12 columns">
-						{{Form::checkbox('onesize', 1, '')}}
+						{{Form::checkbox('onesize', 1)}}
 						<label>One Size Only</label>
 				</div>
 

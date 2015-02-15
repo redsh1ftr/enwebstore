@@ -29,8 +29,31 @@ class ImagersController extends \BaseController {
 	 *
 	 * @return Response
 	 */
+
+	
+
+	public function newImage()
+	{
+
+			$image = Input::file('image');
+	        $filename  = Input::get('product_id') . '_' . Str::random(5) . '.' . $image->getClientOriginalExtension();
+	        $newimg = Image::make($image)->resize(null, 700, function ($constraint) {$constraint->aspectRatio();})->save(public_path().'/images/products/'.$filename);
+	        $newthumb = Image::make($image)->resize(null, 150, function ($constraint) {$constraint->aspectRatio();})->save(public_path().'/thumbs/products/'.$filename);
+		
+		Imager::create(array(
+			'product_id' => Input::get('product_id'),
+			'name' => $filename,
+			'location' => $filename,
+			));
+
+		return Redirect::route('product.index');
+
+	}
+
+
 	public function store()
 	{
+
 		$validator = Validator::make($data = Input::all(), Imager::$rules);
 
 		if ($validator->fails())

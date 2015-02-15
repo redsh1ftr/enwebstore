@@ -18,6 +18,7 @@ class CreateImagersTable extends Migration {
 			$table->integer('product_id');
 			$table->string('name');
 			$table->string('location');
+			$table->string('thumblocation');
 			$table->timestamps();
 		});
 	}

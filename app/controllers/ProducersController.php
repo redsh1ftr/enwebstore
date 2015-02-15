@@ -14,6 +14,14 @@ class ProducersController extends \BaseController {
 		return View::make('producers.index', compact('producers'));
 	}
 
+	public function sortProducts($type){
+
+		$producers = Producer::where('category', $type)->get();
+
+		return View::make('producers.index', compact('producers'));
+	}
+
+
 	/**
 	 * Show the form for creating a new producer
 	 *

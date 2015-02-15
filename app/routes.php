@@ -29,10 +29,30 @@ Route::resource('artist', 'PaintersController');
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++END Resource Routes
 
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Form Routes
+Route::get('/newImage/form', array('as' => 'formnewImage', function(){
+	return View::make('producers.newImage');
+}));
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++END Form Routes
+
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Create New Entry Routes
 Route::post('/newProductCat/make', array('as' => 'newProductCat', 'uses' => 'ProducersController@newProductCat'));
-
+Route::post('/newImage/make', array('as' => 'newImage', 'uses' => 'ImagersController@newImage'));
 
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++END Create New Entry Routes
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++BEGIN Sort Routes
+
+Route::get('/fetchProducts/{type}', array('as' => 'sortProducts', 'uses' => 'ProducersController@sortProducts'));
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++END Sort Routes
