@@ -1,0 +1,1 @@
+F:\PHP\htdocs\enwebstore\app/views/smugglers/show.blade.php
