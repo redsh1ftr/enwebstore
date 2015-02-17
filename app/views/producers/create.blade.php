@@ -43,6 +43,10 @@
 		</div>
 
 		<div class="small-12 columns">
+			{{Form::text('paypal', '', array('placeholder' => 'Paypal ID'))}}
+		</div>
+
+		<div class="small-12 columns">
 			{{Form::text('price', '', array('placeholder' => 'Price'))}}
 		</div>
 

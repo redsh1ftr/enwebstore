@@ -6,7 +6,7 @@
 @foreach(Producer::all() as $product)
 <div style="max-height:400px;max-width:400px;border:1px #ffffff solid;">
 
-Add image to {{$product->name}} <img src="//localhost/enwebstore/public/thumbs/products/{{$product->name}}.jpg"><br>
+Add image to {{$product->name}} <img src="http://www.eternallynocturnal.com/store/public/thumbs/products/{{$product->name}}"><br>
 	{{Form::open(array('route' => 'newImage', 'method' => 'post', 'files' => 'true'))}}
 		<div class="row">
 			{{Form::hidden('product_id', $product->id)}}

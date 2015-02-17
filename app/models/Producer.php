@@ -16,6 +16,7 @@ class Producer extends \Eloquent {
 	'description',
 	'category',
 	'price',
+	'paypal',
 	'active',
 	'onsale',
 	'upcomming',

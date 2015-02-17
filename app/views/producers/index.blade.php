@@ -41,7 +41,7 @@
 
 	<ul class="large-block-grid-3"
 		<li><a href="#" data-reveal-id="showProduct_{{$product->id}}" style="color:#700000;background-color:#000000;font-size:30px">
-			  <img src="//localhost/enwebstore/public/images/products/{{$product->name}}.jpg" style="max-height:700px" />
+			  <img src="http://www.eternallynocturnal.com/store/public/images/products/{{$product->name}}.jpg" style="max-height:700px" />
 		</a></li>
 	</ul>
 

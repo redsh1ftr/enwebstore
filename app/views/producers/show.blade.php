@@ -11,7 +11,7 @@
 		  	
 
 	<a href="#" data-reveal-id="image_popout_main" >	
-		<img src="//localhost/enwebstore/public/images/products/{{$producer->name}}.jpg" style="max-height:400px" />
+		<img src="http://www.eternallynocturnal.com/store/public/images/products/{{$producer->name}}.jpg" style="max-height:400px" />
 	</a>
 		  </li>
 	
@@ -19,7 +19,7 @@
 		 	
 		 		 		  <li>
 		 		 		  	<a href="#" data-reveal-id="image_popout_{{$imgs->id}}" >
-		 		 		    <img src="//localhost/enwebstore/public/images/products/{{$imgs->name}}" style="max-height:400px" alt="{{$imgs->name}}" />
+		 		 		    <img src="http://www.eternallynocturnal.com/store/public/images/products/{{$imgs->name}}" style="max-height:400px" alt="{{$imgs->name}}" />
 		 		 		    </a> 
 		 		 			
 		 		 
@@ -41,8 +41,11 @@
 <input type="hidden" name="on0" value="Sizes:"><div class="blackouttext">
 
 
-
+@if($producer->onesize == 1)<div style="color:#ffffff;">One Size Only</diV>
+			@else
 		<select name="os0" style="max-width:50%">
+			
+
 			@if($producer->xsmall == 1)
 			<option value="XSmall">X-Small</option>
 			@endif
@@ -71,7 +74,9 @@
 			<option value="XXX-Large">XXX-Large</option>
 			@endif
 
+
 		</select>
+		@endif
 		<input type="hidden" name="currency_code" value="USD">
 			<button type="submit" value="Add to Cart" name="submit" style="background-color:transparent;color:#ffffff;"><i class="fi-shopping-cart" ></i>
 			</button>
@@ -96,7 +101,7 @@
 
  <div id="image_popout_{{$imgs->id}}" class="reveal-modal" style="max-width:80%;overflow-y:scroll;background-color:#000000;" data-reveal> 
 		 		 
-		 		 	                              <img src="//localhost/enwebstore/public/images/products/{{$imgs->name}}" style="max-height:700px" />
+		 		 	                              <img src="http://www.eternallynocturnal.com/store/public/images/products/{{$imgs->name}}" style="max-height:700px" />
 		 		 	                              <div style="color:#ffffff">{{$producer->description}}</div>
 		 		 	        
 		 		 
@@ -111,7 +116,7 @@
 
 		<div id="image_popout_main" class="reveal-modal" style="max-width:80%;overflow-y:scroll;background-color:#000000;" data-reveal> 
 
-	                              <img src="//localhost/enwebstore/public/images/products/{{$producer->name}}.jpg" style="max-height:700px" />
+	                              <img src="http://www.eternallynocturnal.com/store/public/images/products/{{$producer->name}}.jpg" style="max-height:700px" />
 	                              <div style="color:#ffffff">{{$producer->description}}</div>
 	        
 

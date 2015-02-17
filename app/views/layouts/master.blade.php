@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stay Awake to Create</title>
-   <link rel="stylesheet" href="//54.149.206.42/etnoc_a/public/foundation/css/foundation.css">
-   <link rel="stylesheet" href="//54.149.206.42/etnoc_a/public/foundation/css/normalize.css">
-   <link rel="stylesheet" href="//localhost/enwebstore/public/foundation/foundation-icons/foundation-icons.css" />
-   <link rel="stylesheet" type="text/css" href="//localhost/etnoc_a/public/date/jquery.datetimepicker.css"/ >
-      <script src="//localhost/etnoc_a/public/date/jquery.js"></script>
-      <script src="//localhost/etnoc_a/public/date/jquery.datetimepicker.js"></script>
+   <link rel="stylesheet" href="http://www.eternallynocturnal.com/store/public/foundation/css/foundation.css">
+   <link rel="stylesheet" href="http://www.eternallynocturnal.com/store/public/foundation/css/normalize.css">
+   <link rel="stylesheet" href="http://www.eternallynocturnal.com/store/public/foundation/foundation-icons/foundation-icons.css" />
+   <link rel="stylesheet" type="text/css" href="http://www.eternallynocturnal.com/store/public/date/jquery.datetimepicker.css"/ >
+      <script src="http://www.eternallynocturnal.com/store/public/date/jquery.js"></script>
+      <script src="http://www.eternallynocturnal.com/store/public/date/jquery.datetimepicker.js"></script>
 
- <script src="//54.149.206.42/etnoc_a/public/foundation/js/vendor/modernizr.js"></script>
+ <script src="http://www.eternallynocturnal.com/store/public/foundation/js/vendor/modernizr.js"></script>
 
 
   <style>
@@ -118,7 +118,6 @@
 
 
 
-          <li><a href="http://www.eternallynocturnal.com/webstore/public/list/products/sale">Sales & Upcoming Items</a></li>
 
           <li><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
 <input type="hidden" name="cmd" value="_s-xclick">
@@ -176,8 +175,8 @@
 
 
 
-  <script src="//54.149.206.42/etnoc_a/public/foundation/js/vendor/jquery.js"></script>
-  <script src="//54.149.206.42/etnoc_a/public/foundation/js/foundation.min.js"></script>
+  <script src="http://www.eternallynocturnal.com/store/public/foundation/js/vendor/jquery.js"></script>
+  <script src="http://www.eternallynocturnal.com/store/public/foundation/js/foundation.min.js"></script>
 
   <script>
     $(document).foundation();
