@@ -13,7 +13,7 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('shoppers.createPaymentForm');
 });
 
 
@@ -26,6 +26,7 @@ Route::resource('checkout', 'SellersController');
 Route::resource('promo', 'PromotersController');
 Route::resource('show', 'BookersController');
 Route::resource('artist', 'PaintersController');
+Route::resource('shopper', 'ShoppersController');
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++END Resource Routes
 
@@ -44,6 +45,7 @@ Route::get('/newImage/form', array('as' => 'formnewImage', function(){
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Create New Entry Routes
 Route::post('/newProductCat/make', array('as' => 'newProductCat', 'uses' => 'ProducersController@newProductCat'));
 Route::post('/newImage/make', array('as' => 'newImage', 'uses' => 'ImagersController@newImage'));
+
 
 
 
