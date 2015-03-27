@@ -17,6 +17,8 @@ Route::get('/', function()
 });
 
 
+Route::post('/makeaPayMent', array('as' => 'PayMent', 'uses' => 'ShoppersController@PayMent'));
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Resource Routes
 
 

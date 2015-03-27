@@ -78,8 +78,6 @@ class ProducersController extends \BaseController {
 
 		return Redirect::route('product.create');
 	}
-
-
 	
 
 
